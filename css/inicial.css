@@ -1,0 +1,544 @@
+/**************
+	BANNER
+**************/
+#banner {
+	background: #45a5d8;
+	height: 400px;
+	margin-top: 70px;
+}
+
+.conteudoBanner {
+	position: relative;
+	height: 100%;
+}
+
+
+.bgBanner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.mascaraBanner {
+	background: url('../img/backgrounds/mascara_banner.png') repeat-x;
+	width: 100%;
+	height: 55px;
+	position: relative;
+	z-index: 2;
+}
+
+
+#banner {
+	max-width: 905px;
+	margin: 0 auto;
+}
+
+#boxBanner {
+	width: 905px;
+	height: 355px;
+	position: relative;
+	margin: 0 auto;
+	z-index: 2;
+}
+
+#boxBanner #slideshow {
+	float: left;
+	position: relative;
+	z-index: 99;
+}
+
+
+#boxBanner .liSlider {
+	position: relative;
+}
+
+
+#nav {
+	width: 45px; 
+	z-index: 9999;
+	position: absolute;
+	top: 115px;
+	left: 0;
+}
+
+#nav a {
+	background: url('../img/buttons/bts_banner.png') no-repeat;
+	background-position: 0 -59px;
+	width: 29px;
+	height: 29px;
+	display: block;
+	margin-bottom: 7px; 
+	font-size: 12px;
+	color: #FFF;
+	padding: 10px 0 0 16px;
+}
+
+#nav a:hover {
+	background-position: 0 -118px;
+}
+
+#nav a.activeSlide {
+	background-position: 0 0;
+}
+
+#nav a:focus { 
+	outline: none; 
+}
+
+
+
+/**************
+	CATEGORIAS DE PRODUTOS
+**************/
+#categorias {
+	position: relative;
+	margin-top: 55px;
+	z-index: 4;
+}
+
+.ondaBranca,
+.ondaVermelha {
+	background-repeat: repeat;
+	position: absolute;
+	width: 100%;
+	height: 72px;
+	display: block;
+}
+
+.ondaBranca {
+	background: url('../img/backgrounds/onda_branca.png');
+	top: -83px;
+}
+
+.ondaVermelha {
+	background: url('../img/backgrounds/onda_vermelha.png');
+	top: -72px;
+}
+
+#categoriasUl {
+	display: inline-block;
+	margin-top: 60px;
+}
+
+.categoriasLi {
+	position: relative;
+	float: left;
+	margin-right: 65px;
+}
+
+.categoriasLiLacteos {
+	margin-right: 0;
+}
+
+.circulo {
+
+}
+
+.circulo,
+.circuloSombra {
+	width: 200px;
+	height: 200px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+.circulo {
+	z-index: 2;
+	position: relative;
+	text-align: center;
+}
+
+.circuloChocolates {
+	background: #45a5d8;
+}
+
+.circuloGuloseimas {
+	background: #8baa28;
+}
+
+.circuloLacteos {
+	background: #ddaa20;
+}
+
+.circuloSombra {
+	background: #000;
+	position: absolute;
+	top: 8px;
+	opacity: 0.1;
+	-moz-opacity: 0.1;
+	filter:alpha(opacity=10);
+	z-index: 1;
+}
+
+.categoriasLiChocolates .circuloSombra {
+	left: -8px;
+}
+
+.categoriasLiGuloseimas .circuloSombra {
+	left: 0;
+}
+
+.categoriasLiLacteos .circuloSombra {
+	right: -8px;
+}
+
+.categoriasLink {
+	display: block;
+	height: 100%;
+}
+
+.categoriasImg,
+.sombraProdutos {
+	position: absolute;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.categoriasImg1 {
+	z-index: 3;
+}
+
+.categoriasImg2 {
+	z-index: 2;
+}
+
+.categoriasImg3 {
+	z-index: 1;
+}
+
+.categoriasTitulo {
+	font-family: 'kg_feeling_22regular', arial, sans-serif;
+	display: block;
+	color: #FFF;
+	font-size: 20px;
+	text-transform: uppercase;
+	padding-top: 140px;
+	position: relative;
+	z-index: 4;
+}
+
+.categoriasLiChocolates .categoriasTitulo {
+	text-shadow: 2px 2px #3988b2;
+}
+
+.categoriasLiGuloseimas .categoriasTitulo {
+	text-shadow: 2px 2px #738d21;
+}
+
+.categoriasLiLacteos .categoriasTitulo {
+	text-shadow: 2px 2px #b38a1a;
+}
+
+
+
+/**************
+	IMAGENS CHOCOLATES
+**************/
+.chocolate1 {
+	width: 151px;
+	height: 99px;
+	top: 24px;
+	left: 22px;
+}
+
+.sombraChocolate1 {
+	top: 105px;
+	left: 20px;
+}
+
+.chocolate2 {
+	width: 118px;
+	height: 92px;
+	top: -9px;
+	left: 3px;
+}
+
+.sombraChocolate2 {
+	top: 75px;
+	left: 20px;
+}
+
+.chocolate3 {
+	width: 109px;
+	height: 113px;
+	top: -27px;
+	right: 40px;
+}
+
+.sombraChocolate3 {
+	top: 75px;
+	right: 30px;
+}
+
+.categoriasLiChocolates .categoriasLink:hover .chocolate1 {
+	-moz-transform:rotate(10deg);
+	-webkit-transform:rotate(10deg);
+	-o-transform:rotate(10deg);
+	-ms-transform:rotate(10deg);
+	transform:rotate(10deg);
+}
+
+.categoriasLiChocolates .categoriasLink:hover .chocolate2 {
+	-moz-transform:rotate(-35deg);
+	-webkit-transform:rotate(-35deg);
+	-o-transform:rotate(-35deg);
+	-ms-transform:rotate(-35deg);
+	transform:rotate(-35deg);
+}
+
+.categoriasLiChocolates .categoriasLink:hover .chocolate3 {
+	-moz-transform:rotate(-30deg);
+	-webkit-transform:rotate(-30deg);
+	-o-transform:rotate(-30deg);
+	-ms-transform:rotate(-30deg);
+	transform:rotate(-30deg);
+}
+
+
+/**************
+	IMAGENS GULOSEIMAS
+**************/
+.guloseima1 {
+	width: 86px;
+	height: 150px;
+	top: -30px;
+	left: 59px;
+}
+
+.sombraGuloseima1 {
+	top: 108px;
+	left: 55px;
+}
+
+.guloseima2 {
+	width: 134px;
+	height: 126px;
+	top: -9px;
+	left: 0px;
+	z-index: 1;
+}
+
+.sombraGuloseima2 {
+	top: 75px;
+	left: 20px;
+}
+
+.guloseima3 {
+	width: 92px;
+	height: 125px;
+	top: -27px;
+	right: 10px;
+	z-index: 2;
+}
+
+.sombraGuloseima3 {
+	top: 75px;
+	right: 30px;
+}
+
+.categoriasLiGuloseimas .categoriasLink:hover .guloseima1 {
+	-moz-transform:rotate(10deg);
+	-webkit-transform:rotate(10deg);
+	-o-transform:rotate(10deg);
+	-ms-transform:rotate(10deg);
+	transform:rotate(10deg);
+}
+
+.categoriasLiGuloseimas .categoriasLink:hover .guloseima2 {
+	-moz-transform:rotate(-25deg);
+	-webkit-transform:rotate(-25deg);
+	-o-transform:rotate(-25deg);
+	-ms-transform:rotate(-25deg);
+	transform:rotate(-25deg);
+}
+
+.categoriasLiGuloseimas .categoriasLink:hover .guloseima3 {
+	-moz-transform:rotate(-20deg);
+	-webkit-transform:rotate(-20deg);
+	-o-transform:rotate(-20deg);
+	-ms-transform:rotate(-20deg);
+	transform:rotate(-20deg);
+}
+
+
+
+/**************
+	IMAGENS LACTEOS
+**************/
+.lacteo1 {
+	width: 115px;
+	height: 144px;
+	top: -35px;
+	left: 41px;
+	z-index: 3;
+}
+
+.sombraLacteo1 {
+	top: 100px;
+	left: 50px;
+}
+
+.lacteo2 {
+	width: 98px;
+	height: 99px;
+	top: -20px;
+	left: 3px;
+	z-index: 2
+}
+
+.sombraLacteo2 {
+	top: 75px;
+	left: 20px;
+}
+
+.lacteo3 {
+	width: 78px;
+	height: 81px;
+	top: 0;
+	right: 3px;
+	z-index: 1
+}
+
+.sombraLacteo3 {
+	top: 75px;
+	right: 30px;
+}
+
+.categoriasLiLacteos .categoriasLink:hover .lacteo1 {
+	-moz-transform:rotate(10deg);
+	-webkit-transform:rotate(10deg);
+	-o-transform:rotate(10deg);
+	-ms-transform:rotate(10deg);
+	transform:rotate(10deg);
+}
+
+.categoriasLiLacteos .categoriasLink:hover .lacteo2 {
+	-moz-transform:rotate(70deg);
+	-webkit-transform:rotate(70deg);
+	-o-transform:rotate(70deg);
+	-ms-transform:rotate(70deg);
+	transform:rotate(70deg);
+}
+
+.categoriasLiLacteos .categoriasLink:hover .lacteo3 {
+	-moz-transform:rotate(-40deg);
+	-webkit-transform:rotate(-40deg);
+	-o-transform:rotate(-40deg);
+	-ms-transform:rotate(-40deg);
+	transform:rotate(-40deg);
+}
+
+
+/**************
+	RECEITAS
+**************/
+#receitas {
+	margin-top: 60px;
+	padding-bottom: 170px;
+}
+
+#conteudoReceitas {
+	max-width: 919px;
+	margin: 0 auto;
+}
+
+#receitas .sessaoTitulo {
+	margin-top: 10px;
+}
+
+#imgFrente {
+	width: 100%;
+}
+
+#galeriaReceitas {
+	max-width: 919px;
+	height: 345px;
+	overflow: auto;
+	margin: 20px auto 0;
+}
+
+.receitasLi {
+	width: 290px;
+	height: 294px;
+	float: left;
+	margin-right: 24px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.receitasLiLast {
+	margin-right: 0;
+}
+
+.receitasContent {
+	max-width: 270px;
+	height: 100%;
+	margin: 10px 10px 15px;
+	text-align: left;
+	position: relative;
+}
+
+.receitasLink {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.receitaImg {
+	width: 100%;
+	display: block;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.receitaTitulo {
+	font-family: 'kg_feeling_22regular', arial, sans-serif;
+	display: block;
+	padding: 13px;
+	font-size: 20px;
+	color: #FFF;
+	line-height: 1em;
+}
+
+.receitalink {
+	padding-left: 13px;
+	display: block;
+	color: #000;
+}
+
+.receitasLi:hover {
+	background: #FFF;
+}
+
+.receitasLi:hover .receitaTitulo {
+	color: #c8252c;
+}
+
+.receitasLi:hover .receitalink {
+	text-decoration: underline;
+}
+
+
+/* MEDIAS QUERIES */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+	
+}
+
+@media only screen and (max-width: 1023px) {
+	.categoriasLi {
+		float: none;
+		margin-right: 0;
+		margin-bottom: 65px;
+	}
+}
+
