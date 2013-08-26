@@ -10,3 +10,5 @@ templates_c/9206ffe216f3f7c2e7655782292928f7d20e8be5.file.footer.tpl.php
 templates_c/a7749c6834b669ba7ed8349d2f905ac1d61b7c3a.file.inicial.tpl.php
 
 templates_c/be439f82a4dbec61746f62a0df07c19a7eecd966.file.header.tpl.php
+
+templates_c/**/*
